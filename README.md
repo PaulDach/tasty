@@ -25,6 +25,8 @@ Pour construire et lancer l’image front :
 
 `docker run -it -p 8080:8080 tasty_front`
 
+L'api est alors disponible sur http://localhost:3000/api et le front sur http://localhost:8080
+
 Concernant le back en tant que tel, il ne répond au sujet à 100% qu'uniquement sur les produits.
 En revanche, le design de la base de donnée à été poussé plus loins, et les routes de bases ont été implémentées.
 Le schema .sql se trouve dans le dossier `sql` et les reflexions sur les questions ouvertes dans `questions`
