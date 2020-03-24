@@ -3,7 +3,7 @@
 Projet utilisant Node.js en TypeScript avec les libs Koa (Express 4.0) et TypeORM pour le back et Vue.JS avec Axios pour le front.
 
 Le fichier de configuration de la base (ormconfig.json) est écrit en dur dans le projet, en effet, il ne m’a pas semblé nécessaire de faire de l’injection d’environnement sans docker-compose.
-Il suffit d’y insérer les valeurs : host, port, username, password et database.
+Il suffit d’y modifier les valeurs : host, port, username, password et database.
 Si l’option synchronize est set sur true, le programme créera automatiquement les tables nécéssaire à son fonctionnement.
 La compatibilité est garantie sur MySQL et MariaDB, mais ne l’est pas sur Postgres.
 
@@ -17,7 +17,7 @@ Pour construire l’image docker :
 
 Pour la lancer :
 
-`docker run -it --link db:db: -p 3000:3000 tasty_back`
+`docker run -it --link db:db -p 3000:3000 tasty_back`
 
 Pour construire et lancer l’image front :
 
