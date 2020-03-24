@@ -1,0 +1,17 @@
+FROM node:10-alpine
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install -g typescript@3.5.2
+
+RUN npm install
+
+COPY . .
+
+RUN tsc
+
+EXPOSE 3000
+
+CMD [ "node", "app.js" ]

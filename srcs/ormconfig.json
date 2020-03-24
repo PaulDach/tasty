@@ -1,0 +1,22 @@
+[
+  {
+    "name": "default",
+    "type": "mariadb",
+    "host": "db",
+    "port": 3306,
+    "username": "root",
+    "password": "tasty",
+    "database": "tasty",
+    "synchronize": true,
+    "logging": true,
+    "entities": [
+      "entities/*.js"
+    ],
+    "migrations": [
+      "migration/*.js"
+    ],
+    "cli": {
+      "migrationsDir": "migration"
+    }
+  }
+]
